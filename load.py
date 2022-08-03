@@ -7,7 +7,22 @@ import pandas as pd
 
 
 def load_subjects(subjs, sessions, path):
-    """Load data."""
+    """Load data for the FRMP project.
+    
+    Parameters
+    ----------
+    subjs : list of str
+        List of subjects to load.
+    sessions : list of int
+        List of session numbers to load.
+    path : str
+        The path to the where the data is stored.
+    
+    Returns
+    -------
+    df : pd.Dataframe
+        A dataframe with the loaded data.
+    """
     
     ### Create empty dataframe for data
     dd_gp = defaultdict(list)
